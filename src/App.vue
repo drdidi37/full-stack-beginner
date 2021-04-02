@@ -4,9 +4,9 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <button @click="$store.commit('add', 2)">counterValue:{{ $store.state.counter }}</button>
-    <button @click="$store.dispatch('add', 2)">counterValue:{{ $store.state.counter }}</button>
-    <!-- <button>{{ $store.getters.doubleCounter }}</button> -->
+    <button @click="$store.commit('add', 2)">commit:{{ $store.state.counter }}</button>
+    <button @click="$store.dispatch('add', 4)">dispatch:{{ $store.state.counter }}</button>
+    <button>getters:{{ $store.getters.doubleCounter }}</button>
   </div>
 </template>
 
