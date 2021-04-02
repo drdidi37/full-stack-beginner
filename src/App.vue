@@ -7,6 +7,7 @@
     <button @click="$store.commit('add', 2)">commit:{{ $store.state.counter }}</button>
     <button @click="$store.dispatch('add', 4)">dispatch:{{ $store.state.counter }}</button>
     <button>getters:{{ $store.getters.doubleCounter }}</button>
+    <router-view></router-view>
   </div>
 </template>
 
