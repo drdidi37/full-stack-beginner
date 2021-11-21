@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  function load () {
+    axios.defaults.baseURL  = 'http://localhost:3000'
+    axios.get('/api/proxy', {
+      headers: {
+        'Token': '12345'
+      }
+    }).then(res => {
+      console.log(res)
+      document.write(JSON.stringify(res.data))
+    })
+  }
+  load()
+</script>
