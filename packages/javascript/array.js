@@ -1,4 +1,3 @@
-
 class Emitter {
   constructor (max) {
     this.max = max
